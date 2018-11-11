@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Michroma|Muli:200,300,400,600,700,800,900|Open+Sans+Condensed:300,700|Open+Sans:300,400,600,700,800|PT+Sans|PT+Sans+Narrow|Raleway:100,200,300,400,500,600,700,800,900');
+
+
+body{
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: .3em;
+}
+
+.container{
+    width: 90%;
+    margin:5% auto;
+    background-color: purple;
+    padding: 1% 0;
+    height: 100%;
+    text-align: center;  
+    color: white;
+    text-transform: uppercase;
+    -webkit-animation: scale-in-ver-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-ver-center 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes scale-in-ver-center {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-ver-center {
+    0% {
+      -webkit-transform: scaleY(0);
+              transform: scaleY(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleY(1);
+              transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+
+h3{
+    text-align: center;
+    /* padding: 1em 0 ; */
+    font-size: 2em;
+    font-weight: 400;
+}
+
+button{
+
+    width:200px;
+    background-color: black;
+    padding: 1em 0;
+    margin: 2em auto 2em;
+    color: white;
+    border:1px solid black;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: .5em;
+    transition: 1.4s;
+    font-weight: bold;
+    font-size: 1.1em;
+    border-radius:2px;
+}
+
+button:hover{
+
+    background-color: white;
+    color: black;
+    border:1px solid white;
+
+}
+
+input{
+    padding: .8em 0;
+    width: 200px;
+    text-align: center;
+
+}
+
+select{
+    height: 3em;   
+    width: 200px;
+    text-align: center;
+    border-radius: 0px!important;
+}
+
+h4{
+    font-weight: 200;
+
+}
+
+@media only screen and (min-width: 600px){
+
+.container{
+    width: 60%;
+}
+
+h1{
+    font-size: 3em;
+}
+
+button{
+    width:300px;
+}
+
+}
